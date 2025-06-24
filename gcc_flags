@@ -1,0 +1,1 @@
+-I{RCPP_EIGEN_INCLUDE_DIR} -I{NDA_DIR} -lstdc++ -lm -O3

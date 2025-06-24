@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+echo $1 | xargs -I{} basename {} .cpp | xargs -I{} echo "gcc {}.cpp @gcc_flags -o ./bin/{} && ./bin/{} $2" | bash
